@@ -1,0 +1,33 @@
+Membre d'équipe: Alexandre Kfoury
+Langage source: intech
+Langage cible: typescript
+Langage d'implémentation: rust
+
+
+Fonctionalités implémentées :
+
+Lexer :
+- lexer (chaines de charactères, nombre entiers et décimaux, variables, mots clés, opérateurs)
+- ajout d'une gestion des erreurs du lexer, notamment la vérification des parenthèse, square brackets et curly brace en trop.
+- batterie de tests
+
+Parser :
+- création d'un ast avec les expressions et les statements
+- parsing des opérations arithmétiques avec gestion des précédences
+- parsing des conditions if/else imbriquée, while
+- parsing des déclarations et assignations de variables
+- ajout d'une gestion des erreurs du parser
+- batterie de tests
+
+Parcours de l'ast et traduction vers typescript
+- implémentation du design pattern visitor pour parcourir l'ast
+
+
+
+Pour lancer le programme (main.rs):
+
+cargo run
+
+Pour lancer les tests :
+
+cargo test
